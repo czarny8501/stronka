@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  currentViewName = 'home';
+  selectView(name: string){
+    this.currentViewName = name;
+  }
 }
